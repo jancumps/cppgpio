@@ -30,3 +30,6 @@ while (status != pin::status::off) {
 
 p21.deinit();
 ```
+## Related blog posts:
+[C++ gpio library for Raspberry Pi - Pt 1: Design and How To Use](https://community.element14.com/products/raspberry-pi/b/blog/posts/c-gpio-library-for-raspberry-pi)  
+[C++ gpio library for Raspberry Pi - Pt 2: Plug In drivers for direct register GPIO, or file system based GPIO](https://community.element14.com/products/raspberry-pi/b/blog/posts/c-gpio-library-for-raspberry-pi---pt-2-plug-in-drivers-for-direct-register-gpio-or-file-system-based-gpio)
