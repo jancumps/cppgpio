@@ -9,12 +9,6 @@ C++ embeddded GPIO library (supports sysfs, memmap register)
 
 ## Use example:
 ```
-// #include <sysfsdevice_filehandler.h>
-// typedef dgpio::pin<dgpio::sysfsdevice_filehandler> pin;
-
-// #include "sysfsdevice_stream.h"
-// typedef dgpio::pin<dgpio::sysfsdevice_stream> pin;
-
 #include "memmapdevice.h"
 typedef dgpio::pin<dgpio::memmapdevice> pin;
 
@@ -30,7 +24,18 @@ while (status != pin::status::off) {
 
 p21.deinit();
 ```
-Uncomment the include and typedef for the implementation you want to use. Your code will be the same regardless of the choice of GPIO driver selected.  
+Use the include and typedef for the implementation you want to use. Your code will be the same regardless of the choice of GPIO driver selected. In this example, the memmap device driver is used. The library will talk directly to the ARM CPU's registers to control the pins.  
+
+```
+// #include <sysfsdevice_filehandler.h>
+// typedef dgpio::pin<dgpio::sysfsdevice_filehandler> pin;
+
+// #include "sysfsdevice_stream.h"
+// typedef dgpio::pin<dgpio::sysfsdevice_stream> pin;
+
+#include "memmapdevice.h"
+typedef dgpio::pin<dgpio::memmapdevice> pin;
+```
 
 ## API:
 ```
