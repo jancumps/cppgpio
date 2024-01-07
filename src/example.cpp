@@ -17,6 +17,7 @@ typedef dgpio::pin<dgpio::memmapdevice> pin;
 #endif
 
 #include <stdlib.h>     /* atoi */
+
 int main(int argc, char *const *argv) {
     if (argc < 2) {
 		return -1;
@@ -36,7 +37,6 @@ int main(int argc, char *const *argv) {
     }
 
 	pin p = pin(gpio);
-
 	p.init(dir);
 
 	if (dir == pin::dir::in) {
@@ -46,26 +46,7 @@ int main(int argc, char *const *argv) {
 		p.set(status);
 	}
 
-//	p21.set(pin::status::off);
-//	pin::status s = p21.get();
-//
-//	p21.set(pin::status::on);
-//	s = p21.get();
-//	(void)s; // solve compiler warning due to unused s
-//
-//	p21.set(pin::status::off);
-
-
-//	p21.init(pin::dir::in);
-//	pin::status status = pin::status::on;
-//	while (status != pin::status::off) {
-//		status = p21.get();
-//	}
-
 	p.deinit();
-
-
 	return retval;
-
 }
 
