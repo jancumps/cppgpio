@@ -15,7 +15,7 @@ public:
 
     enum class dir {
         in, // default for Pi
-        out,
+        out
     };
 
     pin(const unsigned gpio) : gpio(gpio) {}
@@ -39,13 +39,6 @@ public:
 private:
 	unsigned gpio;
 };
-
-
-
-
-
-
-
 
 } // namespace dgpio
 
