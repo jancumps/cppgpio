@@ -69,6 +69,12 @@ Get the latest version:
 Add the `src/lib` folder to your include path  
 Add the relevant cpp source file(s) from `src/lib` to your build list. Ideally, only build and link the one that you're using. See section [Small footprint](#small-footprint) below.  
 
+## Examples:
+There are 2 examples in the `src/` folder:  
+- example.cpp: read or write a pin.
+- blinky.cpp: blink a pin
+
+
 ## User requirements:
 1. Raspberry Pi  
 On Raspberry OS, the user that runs your program has to be in the `gpio` group. When using Raspberry's tools to create an image, your user will be in that group.  
