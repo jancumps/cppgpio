@@ -58,9 +58,16 @@ public:
 - getter: `get(): status`
 - setter: `set(status)`
 
-## small footprint:
+## User requirements:
+1. Raspberry Pi  
+On Raspberry OS, the user that runs your program has to be in the `gpio` group. When using Raspberry's tools to create an image, your user will be in that group.  
+
+## Small footprint:
 The code uses C++ constructs that are resolved at compile time.  
 To keep the firmware size as small as possible, only add the source file of the implementation that you use in the build. 
+
+## Tested with:
+- Raspberry Pi 3 Model B, raspbian bullseye 32 bit lite, gcc version 10.2.1 20210110 (Raspbian 10.2.1-6+rpi1)
 
 ## Related blog posts:
 [C++ gpio library for Raspberry Pi - Pt 1: Design and How To Use](https://community.element14.com/products/raspberry-pi/b/blog/posts/c-gpio-library-for-raspberry-pi)  
