@@ -31,7 +31,7 @@ while (status != pin::status::off) {
 p21.deinit();
 ```
 
-#API
+## API:
 ```
 namespace dgpio {
 template <class D>
