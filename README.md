@@ -63,6 +63,12 @@ public:
 - getter: `get(): status`
 - setter: `set(status)`
 
+## Add to your project:
+Get the latest version: 
+`git clone https://github.com/jancumps/cppgpio.git`  
+Add the `src/lib` folder to your include path  
+Add the relevant cpp source file(s) from `src/lib` to your build list. Ideally, only build and link the one that you're using. See section [Small footprint](#small-footprint) below.  
+
 ## User requirements:
 1. Raspberry Pi  
 On Raspberry OS, the user that runs your program has to be in the `gpio` group. When using Raspberry's tools to create an image, your user will be in that group.  
