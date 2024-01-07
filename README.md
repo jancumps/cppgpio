@@ -30,6 +30,7 @@ while (status != pin::status::off) {
 
 p21.deinit();
 ```
+Uncomment the include and typedef for the implementation you want to use. Your code will be the same regardless of the choice of GPIO driver selected.  
 
 ## API:
 ```
@@ -51,6 +52,11 @@ public:
 };	
 }
 ```
+- constructor: `pin(gpio)`
+- init: `init(dir, initial status)`
+- deinit: `deinit()`
+- getter: `get(): status`
+- setter: `set(status)`
 
 ## small footprint:
 The code uses C++ constructs that are resolved at compile time.  
