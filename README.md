@@ -81,7 +81,7 @@ On Raspberry OS, the user that runs your program has to be in the `gpio` group. 
 
 ## Small footprint:
 The code uses C++ constructs that are resolved at compile time.  
-To keep the firmware size as small as possible, only add the source file of the implementation that you use in the build. 
+To keep the firmware size as small as possible, only add the source file (`.cpp`) of the implementation that you use in the build. 
 
 ## Tested with:
 - Raspberry Pi 3 Model B, raspbian bullseye 32 bit lite, gcc version 10.2.1 20210110 (Raspbian 10.2.1-6+rpi1)
