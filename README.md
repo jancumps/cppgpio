@@ -68,6 +68,7 @@ Get the latest version:
 `git clone https://github.com/jancumps/cppgpio.git`  
 Add the `src/lib` folder to your include path  
 Add the relevant cpp source file(s) from `src/lib` to your build list. Ideally, only build and link the one that you're using. See section [Small footprint](#small-footprint) below.  
+Compiler support: ISO C++ 17 or higher is required. You may actively need to set that (std=c++17) if your build errors.
 
 ## Examples:
 There are 2 examples in the `src/` folder:  
